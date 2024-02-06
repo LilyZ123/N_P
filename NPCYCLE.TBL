@@ -1,0 +1,23 @@
+&noahmp_nminr1_parameters
+cmn = 0.0003 
+idplt = -1.E36
+nactfr = -1.E36
+rsdco_pl = -1.E36
+sol_aorgn = -1.E36
+sol_fon = -1.E36
+sol_fop = -1.E36
+sol_no3 = -1.E36
+sol_orgn = -1.E36
+sol_orgp = -1.E36
+sol_rsd = -1.E36
+sol_st = -1.E36
+sol_fc = -1.E36
+sol_tmp = -1.E36
+sol_ul = -1.E36
+wshd_dnit = -1.E36
+wshd_hmn = -1.E36
+wshd_hmp = -1.E36
+wshd_rmn = -1.E36
+wshd_rmp = -1.E36
+wshd_rwn = -1.E36
+/
