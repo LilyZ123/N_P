@@ -180,9 +180,9 @@ subroutine readsol
             sol_z(1,ihru) = 10.
           endif
     
-          if (isproj == 2) then
-            call estimate_ksat(sol_clay(j,ihru),sol_k(j,ihru))  !!  NK June 28, 2006
-          endif
+          ! if (isproj == 2) then
+          !   call estimate_ksat(sol_clay(j,ihru),sol_k(j,ihru))  !!  NK June 28, 2006
+          ! endif
     
     
     !!    compare maximum rooting depth in soil to maximum rooting depth of
@@ -206,25 +206,25 @@ subroutine readsol
           !   call layersplit (sol_zmx(ihru))
           !end if
     
-    !! create a bizone layer in septic HRUs
-          if (isep_opt(ihru) /= 0) then 
-         if (bz_z(ihru)+bz_thk(ihru) > sol_z(nly,ihru)) then
-           if (sol_z(nly,ihru)>bz_thk(ihru)+10.) then !min. soil thickness for biozone layer (10mm top+biozone layer thickness)
-              bz_z(ihru) = sol_z(nly,ihru) - bz_thk(ihru)
-           else
-              bz_z(ihru) = sol_z(nly,ihru)
-              sol_z(nly,ihru) = sol_z(nly,ihru) + bz_thk(ihru)
-           endif
-           endif 
-           if (bz_z(ihru) > 0.) then 
-             call layersplit (bz_z(ihru))
-             dep_new = bz_z(ihru) + bz_thk(ihru)
-             call layersplit (dep_new)  
-             i_sep(ihru) = iseptic
-           endif    
-          endif
+    ! !! create a bizone layer in septic HRUs
+    !       if (isep_opt(ihru) /= 0) then 
+    !      if (bz_z(ihru)+bz_thk(ihru) > sol_z(nly,ihru)) then
+    !        if (sol_z(nly,ihru)>bz_thk(ihru)+10.) then !min. soil thickness for biozone layer (10mm top+biozone layer thickness)
+    !           bz_z(ihru) = sol_z(nly,ihru) - bz_thk(ihru)
+    !        else
+    !           bz_z(ihru) = sol_z(nly,ihru)
+    !           sol_z(nly,ihru) = sol_z(nly,ihru) + bz_thk(ihru)
+    !        endif
+    !        endif 
+    !        if (bz_z(ihru) > 0.) then 
+    !          call layersplit (bz_z(ihru))
+    !          dep_new = bz_z(ihru) + bz_thk(ihru)
+    !          call layersplit (dep_new)  
+    !          i_sep(ihru) = iseptic
+    !        endif    
+    !       endif
     
-          nly = sol_nly(ihru)
+    !       nly = sol_nly(ihru)
           
     !!    set default values/initialize variables
           if (sol_alb(ihru) < 0.1) sol_alb(ihru) = 0.1

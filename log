@@ -1,0 +1,11 @@
+gfortran -O2 -Wall -Wno-tabs -free -g -c -o modpar.o modpar.f90
+gfortran -O2 -Wall -Wno-tabs -free -g -c -o readchm.o readchm.f90
+gfortran -O2 -Wall -Wno-tabs -free -g -c -o readmgt.o readmgt.f90
+gfortran -O2 -Wall -Wno-tabs -free -g -c -o readsol.o readsol.f90
+gfortran -O2 -Wall -Wno-tabs -free -g -c -o nminrl.o nminrl.f90
+gfortran -O2 -Wall -Wno-tabs -free -g -c -o readsub.o readsub.f90
+gfortran -O2 -Wall -Wno-tabs -free -g -c -o varinit.o varinit.f90
+gfortran -O2 -Wall -Wno-tabs -free -g -c -o operatn.o operatn.f90
+gfortran -O2 -Wall -Wno-tabs -free -g -c -o sched_mgt.o sched_mgt.f90
+gfortran -O2 -Wall -Wno-tabs -free -g -c -o main.o main.f90
+gfortran -O2 -Wall -Wno-tabs -free -g -o SOIL_NP modpar.o readchm.o readmgt.o readsol.o nminrl.o readsub.o varinit.o operatn.o sched_mgt.o main.o
