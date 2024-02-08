@@ -1,5 +1,4 @@
-subroutine readmgt
-      
+subroutine readmgt  
     !!    ~ ~ ~ PURPOSE ~ ~ ~
     !!    this subroutine reads data from the HRU/subbasin management input file
     !!    (.mgt). This file contains data related to management practices used in

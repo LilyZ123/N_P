@@ -1,5 +1,4 @@
 subroutine readchm
-
     !!    ~ ~ ~ PURPOSE ~ ~ ~
     !!    This subroutine reads data from the HRU/subbasin soil chemical input
     !!    file (.chm). This file contains initial amounts of pesticides/nutrients

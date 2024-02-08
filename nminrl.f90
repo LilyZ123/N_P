@@ -1,5 +1,4 @@
 subroutine nminrl
-
     !!    ~ ~ ~ PURPOSE ~ ~ ~
     !!    this subroutine estimates daily nitrogen and phosphorus
     !!    mineralization and immobilization considering fresh organic

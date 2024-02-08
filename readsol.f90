@@ -1,5 +1,4 @@
 subroutine readsol
-
     !!    ~ ~ ~ PURPOSE ~ ~ ~
     !!    this subroutine reads data from the HRU/subbasin soil properties file 
     !!    (.sol). This file contains data related to soil physical properties and

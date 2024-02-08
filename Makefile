@@ -1,7 +1,6 @@
 # Fortran Compiler
 FC = gfortran
 
-
 # Compiler Flags
 FFLAGS = -O2 -Wall -Wno-tabs -free -g
 
