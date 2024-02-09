@@ -4,12 +4,24 @@
 
       implicit none
       call readsub
+      call readinpt
+      !! save initial values
+      if (isproj == 1) then
+        scenario = 2
+        call storeinitial
+      else if (fcstcycles > 1) then
+        scenario =  fcstcycles
+        call storeinitial
+      else
+        scenario = 1
+      endif
+      !      call readsub
 
-      call varinit
+ !     call varinit
 
         !! perform management operations
         ! if (yr_skip(j) == 0)
-         call operatn
+  !       call operatn
 
       !  !! apply fertilizer/manure in continuous fert operation
       !   if (icfrt(j) == 1) then

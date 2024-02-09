@@ -5,8 +5,7 @@ FC = gfortran
 FFLAGS = -O2 -Wall -Wno-tabs -free -g
 
 # Source Files
-SOURCES = Lnminrl.f90 storeinitial.f90 readsub.f90 readchm.f90 readinpt.f90 soil_chem.f90 main.f90
-#ascrv.f90 curno.f90 fert.f90 harvestop.f90 harvkillop.f90 \
+SOURCES = ascrv.f90 curno.f90 fert.f90 harvestop.f90 harvkillop.f90 \
 plantop.f90 readchm.f90 readmgt.f90 readsol.f90 readsub.f90\
 nminrl.f90 varinit.f90 operatn.f90 rootfr.f90 sched_mgt.f90 jdt.f90 main.f90
 
