@@ -90,36 +90,36 @@ subroutine readchm
           if (eof < 0) exit
     !!	end do
     
-          do j = 1, mpst
-            pstnum = 0
-            pltpst = 0.
-            solpst = 0.
-            pstenr = 0.
-            read (106,*,iostat=eof) pstnum, pltpst, solpst, pstenr
-            if (pstnum > 0) then
-              hrupest(ihru) = 1
-              newpest = 0
-              do k = 1, npmx
-                if (pstnum == npno(k)) then
-                  newpest = 1
-                  exit
-                endif
-              end do
-              if (newpest == 0) then
-                npno(npmx) = pstnum
-                nope(pstnum) = npmx
-                npmx = npmx + 1
-              end if
+          ! do j = 1, mpst
+          !   pstnum = 0
+          !   pltpst = 0.
+          !   solpst = 0.
+          !   pstenr = 0.
+          !   read (106,*,iostat=eof) pstnum, pltpst, solpst, pstenr
+          !   if (pstnum > 0) then
+          !     hrupest(ihru) = 1
+          !     newpest = 0
+          !     do k = 1, npmx
+          !       if (pstnum == npno(k)) then
+          !         newpest = 1
+          !         exit
+          !       endif
+          !     end do
+          !     if (newpest == 0) then
+          !       npno(npmx) = pstnum
+          !       nope(pstnum) = npmx
+          !       npmx = npmx + 1
+          !     end if
     
-              k = 0
-              k = nope(pstnum)
-              plt_pst(k,ihru) = pltpst
-              sol_pst(k,ihru,1) = solpst
-              pst_enr(k,ihru) = pstenr
-            end if
+          !     k = 0
+          !     k = nope(pstnum)
+          !     plt_pst(k,ihru) = pltpst
+          !     sol_pst(k,ihru,1) = solpst
+          !     pst_enr(k,ihru) = pstenr
+          !   end if
     
-          if (eof < 0) exit
-          end do
+          ! if (eof < 0) exit
+          ! end do
           exit
        
             

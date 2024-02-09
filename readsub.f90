@@ -6,10 +6,10 @@ subroutine readsub
 
       ! Process each HRU
       ! Read HRU file names
-    chmfile = ""
+    chmfile = "input.chm"
     ! hrufile = ""
-    mgtfile = ""
-    solfile = ""
+    mgtfile = "input.mgt"
+    solfile = "input.sol"
     ! Open files
       open(106, file=chmfile)
       open(107, file=solfile)
