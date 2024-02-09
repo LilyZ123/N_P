@@ -1,0 +1,51 @@
+! Sample Input File for HRU/Subbasin Management
+! Each line represents a parameter value or definition
+
+!! General Management Parameters
+! Title
+Sample HRU Management Data
+! Number of Management Codes
+1
+! Land Cover Status Code
+1
+! Land Cover Identification Number
+1
+! Leaf Area Index
+2.5
+! Biomass of Transplants
+100.0
+! Total Number of Heat Units to Bring Plant to Maturity
+1500.0
+! Biomix
+0.3
+! SCS Runoff Curve Number for Moisture Condition II
+75.0
+! USLE Equation Support Practice (P) Factor
+0.4
+! Minimum Plant Biomass for Grazing
+50.0
+! Filter Strip Width for Bacteria Transport
+10.0
+! Urban Simulation Code
+1
+! Urban Land Type Identification Number
+1
+! Irrigation Source Code
+1
+! Irrigation Source Location
+1
+! Minimum Instream Flow for Irrigation Diversions
+0.1
+! Maximum Daily Irrigation Diversion from the Reach
+0.5
+! Fraction of Available Flow in Reach Allowed to be Applied to the HRU
+0.8
+! Depth to the Sub-Surface Drain
+100.0
+! Time to Drain Soil to Field Capacity
+48.0
+! Drain Tile Lag Time
+72.0
+
+!! End of General Management Parameters
+
